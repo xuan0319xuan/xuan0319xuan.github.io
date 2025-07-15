@@ -1,42 +1,44 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>宇宙風格 UI/UX 作品集</title>
+  <title>Xuan's Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="images/flower-fill.svg">
 </head>
 <body>
   <div class="stars"></div>
   <header>
-    <h1>我是 Xuan</h1>
-    <p>UI/UX 設計師｜宇宙探索者</p>
-    <button id="theme-toggle">切換亮/暗主題</button>
+    <nav>
+      <a href="index.html" class="active">Works</a>
+      <a href="about.html">About</a>
+      <a href="others.html">Others</a>
+    </nav>
+    <div class="hero-flex">
+      <img src="images/flower-fill.svg" alt="Flower Left" class="hero-flower hero-flower-left">
+      <div class="hero-center">
+        <h1>I'm Xuan</h1>
+        <p>UI/UX Designer</p>
+      </div>
+      <img src="images/flower-fill.svg" alt="Flower Right" class="hero-flower hero-flower-right">
+    </div>
   </header>
   <main>
     <section id="portfolio">
-      <h2>作品集</h2>
+      <h2>My Works</h2>
       <div class="works">
         <div class="work-card">
-          <h3>作品名稱 1</h3>
-          <p>這是作品的簡短介紹。</p>
+          <img src="images/meme.gif" alt="Work 1" class="work-img">
+          <h3>Project Name 1</h3>
+          <p>A short description of this UI/UX project.</p>
         </div>
         <div class="work-card">
-          <h3>作品名稱 2</h3>
-          <p>這是作品的簡短介紹。</p>
+          <img src="images/meme.gif" alt="Work 2" class="work-img">
+          <h3>Project Name 2</h3>
+          <p>A short description of this UI/UX project.</p>
         </div>
       </div>
-    </section>
-    <section id="about">
-      <h2>關於我</h2>
-      <p>熱愛設計與宇宙，擅長 UI/UX、動態設計與前端開發。</p>
-    </section>
-    <section id="contact">
-      <h2>聯絡方式</h2>
-      <ul>
-        <li>Email: xuan@example.com</li>
-        <li>Behance: behance.net/xuan</li>
-      </ul>
     </section>
   </main>
   <script src="script.js"></script>

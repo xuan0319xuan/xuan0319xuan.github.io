@@ -43,7 +43,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0;
+  gap: 0.5rem;
   background: var(--nav-bg);
   padding: 0.5rem;
   border-radius: 20px;
@@ -204,6 +204,7 @@ h2 {
   justify-content: center;
   gap: 2.5rem;
   min-height: 220px;
+  padding: 2rem 0;
 }
 .hero-flower {
   width: 90px;

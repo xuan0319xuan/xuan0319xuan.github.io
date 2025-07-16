@@ -6,6 +6,7 @@
   <title>Xuan's Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/svg+xml" href="images/flower-fill.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="stars"></div>
@@ -15,32 +16,107 @@
       <a href="about.html">About</a>
       <a href="others.html">Others</a>
     </nav>
-  </header>
-  <div class="hero-flex">
-    <img src="images/flower-fill.svg" alt="Flower Left" class="hero-flower hero-flower-left">
-    <div class="hero-center">
-      <h1>I'm Xuan</h1>
-      <p>UI/UX Designer</p>
+    <div class="hero-flex">
+      <img src="images/flower-fill.svg" alt="Flower Left" class="hero-flower hero-flower-left">
+      <div class="hero-center">
+        <h1>I'm Xuan</h1>
+        <p>UI/UX Designer</p>
+      </div>
+      <img src="images/flower-fill.svg" alt="Flower Right" class="hero-flower hero-flower-right">
     </div>
-    <img src="images/flower-fill.svg" alt="Flower Right" class="hero-flower hero-flower-right">
-  </div>
+  </header>
   <main>
     <section id="portfolio">
-      <h2>My Works</h2>
-      <div class="works">
-        <div class="work-card">
-          <img src="images/meme.gif" alt="Work 1" class="work-img">
-          <h3>Project Name 1</h3>
-          <p>A short description of this UI/UX project.</p>
+      <h2>UI/UX Projects</h2>
+      <div class="works works-banner">
+        <div class="work-banner-card">
+          <div class="work-banner-content">
+            <div class="work-date">2024.06</div>
+            <h3>Personal Portfolio Website <span style="color:#FF6D45;font-size:1.2em;vertical-align:middle;" aria-label="locked" title="Locked">🔒</span></h3>
+            <div class="work-subtitle">A modern, minimal, and responsive portfolio for UI/UX designers</div>
+            <div>
+              <span class="work-tag">Portfolio</span>
+              <span class="work-tag">Web Design</span>
+              <span class="work-tag">Responsive</span>
+              <span class="work-tag">UI/UX</span>
+            </div>
+            <div class="work-desc">Role<br>UI/UX Design, Frontend Development, Branding</div>
+            <a href="project1.html" class="view-more-btn">View More</a>
+          </div>
+          <div class="work-banner-img-wrap">
+            <img src="images/meme.gif" alt="Work 1" class="work-banner-img">
+          </div>
         </div>
-        <div class="work-card">
-          <img src="images/meme.gif" alt="Work 2" class="work-img">
-          <h3>Project Name 2</h3>
-          <p>A short description of this UI/UX project.</p>
+        <div class="work-banner-card">
+          <div class="work-banner-content">
+            <div class="work-date">2024.05</div>
+            <h3>Productivity App Concept</h3>
+            <div class="work-subtitle">A mobile app to help users manage tasks and boost productivity</div>
+            <div>
+              <span class="work-tag">App</span>
+              <span class="work-tag">Productivity</span>
+              <span class="work-tag">Concept</span>
+              <span class="work-tag">UI/UX</span>
+            </div>
+            <div class="work-desc">Role<br>UX Research, Wireframe, UI Design</div>
+            <a href="project2.html" class="view-more-btn">View More</a>
+          </div>
+          <div class="work-banner-img-wrap">
+            <img src="images/meme.gif" alt="Work 2" class="work-banner-img">
+          </div>
+        </div>
+        <div class="work-banner-card">
+          <div class="work-banner-content">
+            <div class="work-date">2024.04</div>
+            <h3>Mobile Health Tracker</h3>
+            <div class="work-subtitle">A mobile app for tracking health metrics and habits</div>
+            <div>
+              <span class="work-tag">App</span>
+              <span class="work-tag">Health</span>
+              <span class="work-tag">Mobile</span>
+              <span class="work-tag">UI/UX</span>
+            </div>
+            <div class="work-desc">Role<br>UI/UX Design, Prototyping, User Testing</div>
+            <a href="project3.html" class="view-more-btn">View More</a>
+          </div>
+          <div class="work-banner-img-wrap">
+            <img src="images/meme.gif" alt="Work 3" class="work-banner-img">
+          </div>
+        </div>
+        <div class="work-banner-card">
+          <div class="work-banner-content">
+            <div class="work-date">2024.03</div>
+            <h3>E-commerce Redesign</h3>
+            <div class="work-subtitle">A modern redesign for an online shopping experience</div>
+            <div>
+              <span class="work-tag">Web</span>
+              <span class="work-tag">E-commerce</span>
+              <span class="work-tag">Redesign</span>
+              <span class="work-tag">UI/UX</span>
+            </div>
+            <div class="work-desc">Role<br>UI/UX Design, Branding, Frontend</div>
+            <a href="project4.html" class="view-more-btn">View More</a>
+          </div>
+          <div class="work-banner-img-wrap">
+            <img src="images/meme.gif" alt="Work 4" class="work-banner-img">
+          </div>
         </div>
       </div>
     </section>
   </main>
+  <div id="password-modal" style="display:none;">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <div class="modal-title">This project is locked 🔒</div>
+      <div class="modal-desc">Please enter the password to view this project.</div>
+      <input type="password" id="modal-password-input" placeholder="Password" autocomplete="off" />
+      <div class="modal-error" id="modal-error-msg" style="display:none;">Incorrect password!</div>
+      <div class="modal-actions">
+        <button id="modal-cancel-btn" type="button">Cancel</button>
+        <button id="modal-confirm-btn" type="button">Confirm</button>
+      </div>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html> 
